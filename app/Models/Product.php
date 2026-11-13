@@ -16,7 +16,10 @@ class Product extends Model
     /** Белый список полей сортировки каталога. */
     public const SORTABLE = ['price', 'name', 'created_at', 'stock'];
 
-    public const ICONS = ['sword', 'shield', 'potion', 'hat', 'ring', 'gem', 'chest', 'coin', 'key', 'scroll', 'bow', 'axe'];
+    public const ICONS = [
+        'sword', 'shield', 'potion', 'hat', 'ring', 'gem', 'chest', 'coin', 'key', 'scroll', 'bow', 'axe',
+        'cloak_blue', 'cloak_red', 'cloak_orange', 'cloak_violet', 'cloak_snow', 'cloak_night',
+    ];
 
     protected $fillable = [
         'category_id', 'name', 'slug', 'description', 'price', 'stock', 'rarity', 'icon', 'is_active',
